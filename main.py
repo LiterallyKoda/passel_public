@@ -29,7 +29,7 @@ from discord.ext import commands
 #        Passel so that all pinned messages get sent to the pins archive channel.
 
 # TODO change command here if you want to use another command, replace p. with anything you want inside the single ('') quotes
-client = commands.Bot(command_prefix='p.',
+client = commands.Bot(command_prefix='=',
                       status='Online', case_insensitive=True)
 client.remove_command("help")
 
@@ -39,11 +39,11 @@ mode = 1
 # TODO 
 # sendall is set to 0 by default, change to 1 if you want
 # the bot to send all pinned messages to the pins channel
-sendall = 0
+sendall = 1
 
 # TODO 
 # replace the 0 with the pins channel ID for your sever
-pins_channel = 0
+pins_channel = 931707227193085972
 
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
@@ -209,7 +209,7 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
 
 # TODO Replace TOKEN with the token from discord developer portal 
-client.run('TOKEN')
+client.run('MTAwMjAwODkyOTI2MzQzMTcxMQ.GdQbdQ.P6IeVdLAD2jvKB1MKUUYJIvcAt44wntY3PqWz0')
 
 # TODO If using GitHub diff deployment on HeroKu comment out the above line with '#' and remove '#' from the line below to uncomment it. 
 #client.run(os.environ.get('TOKEN'))
